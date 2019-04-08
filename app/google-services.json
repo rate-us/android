@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "893173323332",
+    "firebase_url": "https://androidratethem.firebaseio.com",
+    "project_id": "androidratethem",
+    "storage_bucket": "androidratethem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893173323332:android:f64a4fbfb3870f19",
+        "android_client_info": {
+          "package_name": "com.example.androidratethem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_gTQJyDdtWprgFjDR17r9Lm3lg6M4IKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893173323332-q18jvs5hi02dtr08dvion1gaut3g30sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
