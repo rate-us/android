@@ -63,7 +63,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
         holder.mLikeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                feedActivity.setLiked(image);
+               feedActivity.setLiked(image);
             }
         });
     }
