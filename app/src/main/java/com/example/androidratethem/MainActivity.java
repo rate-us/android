@@ -19,6 +19,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FirebaseUser fbUser = FirebaseAuth.getInstance().getCurrentUser();
+        if(fbUser != null) {
+            Intent intent = new Intent(this, FeedActivity.class);
+            startActivity(intent);
+        }
     }
 
     public void signIn(View view) {
@@ -37,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
             if (resultCode == RESULT_OK) {
                 // Successfully signed in
-                FirebaseUser fbUser = FirebaseAuth.getInstance().getCurrentUser();
-                Toast.makeText(this, "Authenticated as " + fbUser.getDisplayName(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, FeedActivity.class);
+                startActivity(intent);
             } else {
                 // Sign in failed, check response for error code
                 if (response != null) {
